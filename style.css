@@ -36,7 +36,7 @@ header {
 }
 
 .card-opcao {
-    flex: 1 1 100%;  /* Faz com que cada card ocupe no mínimo 30% da largura disponível */
+    flex: 1 1 10px;  /* Faz com que cada card ocupe no mínimo 30% da largura disponível */
     display: flex;
     justify-content: center;
     align-items: center;
