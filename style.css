@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 20px;
+}
+
+img{
+    width: 200px;
+}
+
+li{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+header{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.card-opcao{
+    display: flex;
+
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+}
