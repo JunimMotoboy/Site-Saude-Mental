@@ -28,15 +28,11 @@ header{
 
 .container{
     display: flex;
-    align-items: center;
-    max-width: 100%;
-
 }
 
-.card-opcao{
-    display: flex;
-}
 .card{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
+
