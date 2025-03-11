@@ -32,25 +32,35 @@ header {
 .conteiner {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;  /* Para garantir que os cards se movam para uma nova linha quando necessário */
+    flex-wrap: wrap;
+    margin-top: 50px;  /* Para garantir que os cards se movam para uma nova linha quando necessário */
 }
 
 .card-opcao {
-    flex: 1 1 10px;  /* Faz com que cada card ocupe no mínimo 30% da largura disponível */
+    flex: 1 1 30%;  /* Faz com que cada card ocupe no mínimo 30% da largura disponível */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%; /* Mantém o limite de largura para os cards */
 }
 
 .card-img-top {
     max-width: 100%;
+    height: auto;
 }
 
 .card-body {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 10px;
     padding: 15px;
 }
 
