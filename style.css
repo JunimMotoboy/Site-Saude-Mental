@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -23,17 +24,47 @@ li {
 }
 
 header {
-    background-color: blueviolet;
+    background-color: rgba(52, 63, 216, 0.733);
     display: flex;
     justify-content: center;
+    padding: 20px;
+    width: 100%;
 }
+
+body{
+
+    background-image: url('img/Fundo-image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    box-shadow: inset 3000px 3000px 3000px rgba(0, 0, 0, 0.575);
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /* Estilo para o container dos cards */
 .conteiner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 50px;  /* Para garantir que os cards se movam para uma nova linha quando necessário */
+    margin-top: 100px;
+
+
+}
+h3{
+    margin-bottom: 10px;
+}
+.card-txt{
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 05px;
 }
 
 .card-opcao {
@@ -41,19 +72,31 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.card-opcao, .card {
+    flex: 1 1 25%;  /* Reduz a largura mínima dos cards */
+    max-width: 280px; /* Define um tamanho máximo */
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%; /* Mantém o limite de largura para os cards */
+    cursor: pointer;
+    padding: 10px;
+
 }
 
 .card-img-top {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .card-body {
@@ -64,8 +107,18 @@ header {
     padding: 15px;
 }
 
-h1, p {
+h1,p {
     text-align: center;
-    margin-bottom: 20px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
 }
 
