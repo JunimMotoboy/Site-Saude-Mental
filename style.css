@@ -1,38 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
     gap: 30px;
     padding: 20px;
 }
 
-img{
-    width: 200px;
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-li{
+li {
     color: whitesmoke;
     cursor: pointer;
 }
 
-header{
+header {
     background-color: blueviolet;
     display: flex;
     justify-content: center;
 }
 
-.container{
+/* Estilo para o container dos cards */
+.conteiner {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* Para garantir que os cards se movam para uma nova linha quando necessário */
 }
 
-.card{
+.card-opcao {
+    flex: 1 1 100%;  /* Faz com que cada card ocupe no mínimo 30% da largura disponível */
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%; /* Mantém o limite de largura para os cards */
+}
+
+.card-img-top {
+    max-width: 100%;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+h1, p {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
