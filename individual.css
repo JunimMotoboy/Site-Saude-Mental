@@ -2,21 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img{
-    width: 500px;
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
 }
-
-
 body{
     background-color: rgba(10, 109, 223, 0.452);
-}
-ul{
     display: flex;
-    list-style: none;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
 }
 
 a{
@@ -24,12 +21,16 @@ a{
     color: white;
 }
 
-.caminhada{
-    display:flex;
-    flex-direction: column;
-}
-
-.yoga{
+.container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+.head{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+}
+
