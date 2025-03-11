@@ -11,14 +11,14 @@ img{
     object-fit: contain;
 }
 body{
-    background-color: rgba(10, 109, 223, 0.452);
+    background-color: rgba(10, 109, 223, 0.582);
     display: flex;
     flex-direction: column;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .container{
