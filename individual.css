@@ -89,6 +89,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 380px;
   gap: 20px;
   max-width: 600px;
   text-align: center;
