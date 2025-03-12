@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alertCard.style.zIndex = "1000";
   
         let alertText = document.createElement("p");
-        alertText.textContent = "Quais problemas de saúde mental você está enfrentando?";
+        alertText.textContent = "Quais problemas você está enfrentando?";
         alertCard.appendChild(alertText);
         alertText.style.color = 'black'
   
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         confirmButton.addEventListener("click", function () {
           let checkboxes = document.querySelectorAll(".issue-checkbox");
           let checked = Array.from(checkboxes).some(cb => cb.checked);
-          
+
           if (checked) {
             window.location.href = "individual.html";
           } else {
