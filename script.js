@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
           let checkboxes = document.querySelectorAll(".issue-checkbox");
           let checked = Array.from(checkboxes).some(cb => cb.checked);
 
-          if (checked ) {
+          if (checked) {
             window.location.href = "individual.html#exercicios";
           } else {
             alert("Por favor, selecione pelo menos um problema antes de confirmar.");
