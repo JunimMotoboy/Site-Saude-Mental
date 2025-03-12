@@ -1,89 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajuda</title>
+    <link rel="stylesheet" href="individual.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ajuda</title>
-  <link rel="stylesheet" href="individual.css" />
-</head>
-
-<body>
-  <header>
-    <ul class="head">
-      <a href="#exercicios">
-        <li>Exercicios</li>
-      </a>
-      <a href="#">
-        <li>Videos Motivacionais</li>
-      </a>
-      <a href="#">
-        <li>Relatos</li>
-      </a>
-      <a href="#">
-        <li>Anotações</li>
-      </a>
-    </ul>
-  </header>
-
-  <div class="container">
-    <h1>Exercicios Para depressão</h1>
-    <p>
-      Exercícios físicos são ótimos para aliviar os sintomas da depressão, pois
-      ajudam a liberar endorfinas e melhorar o bem-estar
-    </p>
-
-    <div class="caminhada" id="exercicios">
-      <h2>Caminhada ao ar livre</h2>
-      <ul>
-        <li>Duração: 20 a 30 minutos</li>
-        <li>Intensidade: Leve a moderada</li>
-        <li>
-          Benefícios: Melhora o humor, aumenta a exposição ao sol (importante
-          para a vitamina D), reduz a ansiedade
-        </li>
+  <body>
+    <header>
+      <ul class="head">
+        <a href="#exercicios">
+          <li>Exercicios</li>
+        </a>
+        <a href="#relatos">
+          <li>Relatos</li>
+        </a>
+        <a href="#" onclick="criarInputTelaCheia()">
+          <li>Anotações</li>
+        </a>
       </ul>
+    </header>
+
+    <div class="img-top">
+      <img src="./img/moça-sorrindo.jpg" alt="Mulher Sorrindo" />
+      <img src="./img/rapaz-sorrindo.jpg" alt="Rapaz Sorrindo" />
+      <img src="./img/mulher-sorrindo.jpg" alt="Mulher Sorrindo" />
     </div>
 
-    <div class="yoga">
-      <h2>Alongamenteo e Yoga</h2>
-      <ul>
-        <li>Duração: 10 a 30 minutos</li>
-        <h3>Exercícios sugeridos:</h3>
-        <li>
-          Posição da criança
-        </li>
-        <img src="./img/postura-da-criança-yoga.png" alt="" />
+    <div class="container">
+      <h1>Exercicios Para depressão</h1>
+      <p>
+        Exercícios físicos são ótimos para aliviar os sintomas da depressão,
+        pois ajudam a liberar endorfinas e melhorar o bem-estar
+      </p>
 
-        <li>
-          Cão olhando para baixo
+      <div class="exercicio" id="exercicios">
+        <h2>Caminhada ao ar livre</h2>
+        <ul>
+          <li>Duração: 20 a 30 minutos</li>
+          <li>Intensidade: Leve a moderada</li>
+          <li>
+            Benefícios: Melhora o humor, aumenta a exposição ao sol (importante
+            para a vitamina D), reduz a ansiedade
+          </li>
+        </ul>
+      </div>
 
-        </li>
-        <img src="./img/Cão olhando para baixo.png" alt="" />
-        <li>Respiração profunda (pranayama)</li>
-        <li>
-          Benefícios: Relaxa o corpo, reduz tensão muscular e melhora a
-          qualidade do sono
-        </li>
-      </ul>
-    </div>
+      <div class="exercicio">
+        <h2>Alongamento e Yoga</h2>
+        <ul>
+          <li>Duração: 10 a 30 minutos</li>
+          <h3>Exercícios sugeridos:</h3>
+          <li>Posição da criança</li>
+          <img src="./img/postura-da-criança-yoga.png" alt="" />
+          <li>Cão olhando para baixo</li>
+          <img src="./img/Cão olhando para baixo.png" alt="" />
+          <li>Respiração profunda (pranayama)</li>
+          <li>
+            Benefícios: Relaxa o corpo, reduz tensão muscular e melhora a
+            qualidade do sono
+          </li>
+        </ul>
+      </div>
 
-    <div class="danca">
-      <h2>Dança</h2>
-      <ul>
-        <li>Duração: 20 a 30 minutos</li>
-        <li>
-          Estilos sugeridos: Zumba, dança livre, qualquer ritmo que você goste
-        </li>
-        <li>
-          Benefícios: Liberação de endorfinas, sensação de liberdade e
-          diversão
-        </li>
-      </ul>
-    </div>
+      <div class="exercicio">
+        <h2>Dança</h2>
+        <ul>
+          <li>Duração: 20 a 30 minutos</li>
+          <li>
+            Estilos sugeridos: Zumba, dança livre, qualquer ritmo que você goste
+          </li>
+          <li>
+            Benefícios: Liberação de endorfinas, sensação de liberdade e
+            diversão
+          </li>
+        </ul>
+      </div>
 
-<<<<<<< HEAD
-      <div class="aerobico">
+      <div class="exercicio">
         <h2>Exercícios aeróbicos</h2>
         <h3>Corrida, Bicicleta, Pular corda</h3>
         <ul>
@@ -94,7 +89,7 @@
           </li>
         </ul>
       </div>
-      <div class="respiracao">
+      <div class="exercicio">
         <h2>Exercícios de respiração e meditação</h2>
         <ul>
           <li>
@@ -106,30 +101,37 @@
         </ul>
       </div>
 
-      <div>
+      <div class="exercicio">
         <h2>Caminhada consciente</h2>
         <ul>
           <h3>Como Fazer</h3>
-          <li> Caminhe ao ar livre ou em um local tranquilo, prestando atenção na respiração e nos movimentos do corpo.</li>
+          <li>
+            Caminhe ao ar livre ou em um local tranquilo, prestando atenção na
+            respiração e nos movimentos do corpo.
+          </li>
           <li>Duração: 15 a 30 minutos</li>
-          <li>Benefícios: Reduz pensamentos acelerados, melhora a circulação e alivia o estresse.</li>
+          <li>
+            Benefícios: Reduz pensamentos acelerados, melhora a circulação e
+            alivia o estresse.
+          </li>
         </ul>
       </div>
 
-
-      <div>
+      <div class="exercicio">
         <h2>Exercícios de Alongamento</h2>
         <ul>
           <li>Alongamento de pescoço e ombros</li>
           <li>Torções suaves do tronco</li>
           <li>Alongamento das pernas sentado</li>
           <li>Duração: 10 a 15 minutos</li>
-          <li>Benefícios: Liberação de tensão muscular, melhora da circulação e alívio da ansiedade</li>
+          <li>
+            Benefícios: Liberação de tensão muscular, melhora da circulação e
+            alívio da ansiedade
+          </li>
         </ul>
       </div>
 
-
-      <div>
+      <div class="exercicio">
         <h2>Exercício de Tensão e Relaxamento Muscular</h2>
         <ul>
           <h3>Como Fazer:</h3>
@@ -137,77 +139,106 @@
           <li>Solte lentamente enquanto respira fundo.</li>
           <li>Repita com outras partes do corpo (ombros, pernas, rosto).</li>
           <li>Duração: 5 a 10 minutos</li>
-          <li>Benefícios: Ajuda a relaxar o corpo e diminuir a tensão causada pela ansiedade</li>
+          <li>
+            Benefícios: Ajuda a relaxar o corpo e diminuir a tensão causada pela
+            ansiedade
+          </li>
         </ul>
       </div>
     </div>
-    
+
+    <h2 class="titulo">Relatos</h2>
+    <div id="relatos">
+      <!-- Primeira Pessoa -->
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./img/ana triste.jpg"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Ana, 28 anos</h3>
+          <h6><p>Yoga e Mindfulness</p></h6>
+          <p class="card-text">
+            "Eu vivia com crises de ansiedade e depressão, e muitas vezes não
+            conseguia sair da cama. Foi quando minha irmã me chamou para uma
+            aula de yoga. No começo, achei que não ia funcionar, mas continuei
+            indo. A combinação de respiração, alongamento e meditação me ajudou
+            a ter mais controle sobre meus pensamentos e a reduzir meu estresse.
+            Com o tempo, percebi que estava mais presente e menos ansiosa. Hoje,
+            não largo mais minha prática de yoga."
+          </p>
+        </div>
+      </div>
+
+      <!-- Segunda Pessoa -->
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./img/marcos triste.jpg"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Marcos, 45 anos</h3>
+          <h6><p>Academia</p></h6>
+          <p class="card-text">
+            "Após um divórcio difícil, entrei em um período muito sombrio. Me
+            sentia sem energia, sem motivação para nada. Um amigo me chamou para
+            treinar na academia com ele, e fui sem muita expectativa. Mas aquele
+            primeiro treino me deu uma sensação de realização que eu não sentia
+            há tempos. Aos poucos, fui criando uma rotina e percebi que minha
+            autoestima e humor melhoraram. Hoje, a musculação é parte essencial
+            do meu tratamento contra a depressão."
+          </p>
+        </div>
+      </div>
+
+      <!-- Terceira pessoa -->
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./img/Joao triste.jpg"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h3 class="card-title">João, 34 anos</h3>
+          <h6><p>Corrida como terapia</p></h6>
+          <p class="card-text">
+            "Eu estava há anos lutando contra a depressão, tomando remédios e
+            fazendo terapia, mas sentia que algo ainda estava faltando. Comecei
+            a correr por recomendação do meu terapeuta e, no início, foi
+            difícil. Mas, com o tempo, a corrida se tornou minha válvula de
+            escape. A sensação de completar cada treino, a endorfina liberada e
+            a melhora no meu sono fizeram toda a diferença. Hoje, corro pelo
+            menos quatro vezes por semana e minha mente está muito mais leve."
+          </p>
+        </div>
+      </div>
+
+      <!-- Quarta Pessoa -->
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./img/Camila triste.jpg"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Camila, 22 anos</h3>
+          <h6><p>Dança</p></h6>
+          <p class="card-text">
+            "Desde a adolescência, luto contra a depressão e sempre fui muito
+            tímida. Um dia, resolvi fazer uma aula de dança por curiosidade.
+            Aquela hora dançando fez com que eu esquecesse dos problemas e
+            sentisse uma alegria genuína. Continuei frequentando as aulas e me
+            senti mais confiante, mais conectada com meu corpo e com as pessoas
+            ao meu redor. A dança me ajudou a encontrar felicidade em momentos
+            simples."
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="individual.js"></script>
   </body>
 </html>
-=======
-    <div class="aerobico">
-      <h2>Exercícios aeróbicos</h2>
-      <h3>Corrida, Bicicleta, Pular corda</h3>
-      <ul>
-        <li>Duração: 20 a 45 minutos</li>
-        <li>
-          Benefícios: Aumento da energia, melhora do humor e da disposição
-          diária
-        </li>
-      </ul>
-    </div>
-    <div class="respiracao">
-      <h2>Exercícios de respiração e meditação</h2>
-      <ul>
-        <li>
-          Técnica: Inspire profundamente pelo nariz por 4 segundos, segure por
-          4 segundos e expire lentamente pela boca por 6 segundos
-        </li>
-        <li>Duração: 5 a 10 minutos</li>
-        <li>Benefícios: Redução do estresse e melhora da concentração</li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>Caminhada consciente</h2>
-      <ul>
-        <h3>Como Fazer</h3>
-        <li> Caminhe ao ar livre ou em um local tranquilo, prestando atenção na respiração e nos movimentos do corpo.
-        </li>
-        <li>Duração: 15 a 30 minutos</li>
-        <li>Benefícios: Reduz pensamentos acelerados, melhora a circulação e alivia o estresse.</li>
-      </ul>
-    </div>
-
-
-    <div>
-      <h2>Exercícios de Alongamento</h2>
-      <ul>
-        <li>Alongamento de pescoço e ombros</li>
-        <li>Torções suaves do tronco</li>
-        <li>Alongamento das pernas sentado</li>
-        <li>Duração: 10 a 15 minutos</li>
-        <li>Benefícios: Liberação de tensão muscular, melhora da circulação e alívio da ansiedade</li>
-      </ul>
-    </div>
-
-
-    <div>
-      <h2>Exercício de Tensão e Relaxamento Muscular</h2>
-      <ul>
-        <h3>Como Fazer:</h3>
-        <li>Contraia um grupo muscular (exemplo: mãos) por 5 segundos.</li>
-        <li>Solte lentamente enquanto respira fundo.</li>
-        <li>Repita com outras partes do corpo (ombros, pernas, rosto).</li>
-        <li>Duração: 5 a 10 minutos</li>
-        <li>Benefícios: Ajuda a relaxar o corpo e diminuir a tensão causada pela ansiedade</li>
-      </ul>
-    </div>
-
-  </div>
-
-
-</body>
-
-</html>
->>>>>>> 5bbe014b480778865f7d5f0f1e9a107775cf276c
