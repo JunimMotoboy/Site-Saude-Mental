@@ -94,7 +94,6 @@ h1, .ansiedade{
   align-items: center;
   height: 380px;
   gap: 20px;
-  max-width: 600px;
   flex-wrap: wrap;
   padding: 20px;
   background: #fff;
@@ -241,8 +240,6 @@ header li:hover{
   .container ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 
 }
