@@ -91,7 +91,7 @@ function mostrarDadosSalvosNaTela() {
     const ulHTML = document.createElement('ul');
 
     ulHTML.style.listStyle = "square"
-
+    
     // Adiciona um item <li> para cada anotação
     notes.forEach((note, index) => {
       const liHTML = document.createElement('li');
