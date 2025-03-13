@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 .anotacoes{
   margin-top: 50px;
   display: flex;
@@ -124,6 +132,7 @@ h1, .ansiedade{
   font-size: 1.1em;
   color: #444;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 #relatos {
@@ -168,7 +177,6 @@ h1, .ansiedade{
 
 .card h3 {
   font-size: 1.5em;
-  font-weight: 400;
   margin: 15px 0 5px;
   color: #333;
 }
@@ -181,11 +189,11 @@ h1, .ansiedade{
 
 .card p {
   font-size: 1em;
-  font-weight: 100;
   color: #444;
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
 
 /* Cabeçalho */
 .head {
@@ -214,6 +222,8 @@ header li:hover{
   color: #007bff;
 }
 
+
+
 /* Responsividade */
 @media (max-width: 808px) {
   .img-top {
@@ -233,6 +243,7 @@ header li:hover{
 
   .container {
     margin-top: 50px;
+    
   }
 
   .titulo {
@@ -249,11 +260,13 @@ header li:hover{
     align-items: center;
     height: auto;
     max-width: 500px;
+    font-size: 14px;
   }
   .container ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
   }
   .container{
     display: grid;
