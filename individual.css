@@ -80,9 +80,10 @@ a{
 .container ul {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
   gap: 10px;
   padding-left: 20px;
+  list-style: square;
 }
 h1, .ansiedade{
   margin-top:80px
@@ -93,6 +94,8 @@ h1, .ansiedade{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-wrap: wrap;
+  text-justify: newspaper;
   height: 400px;
   gap: 20px;
   padding: 50px;
