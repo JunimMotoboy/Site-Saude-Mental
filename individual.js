@@ -34,39 +34,60 @@ function criarInputTelaCheia() {
   // Quando o usuário pressionar 'Enter', salvar o valor e remover o input
   input.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-      // Salvar o valor digitado no Local Storage
-      localStorage.setItem("userInput", input.value);
-      document.body.removeChild(input); // Remove o input quando 'Enter' for pressionado
+      // Recuperar anotações antigas ou criar uma nova lista
+      let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+      // Adicionar a nova anotação à lista
+      notes.push(input.value);
+      
+      // Salvar a lista atualizada no localStorage
+      localStorage.setItem("notes", JSON.stringify(notes));
+
+      // Limpar o valor do input
+      input.value = '';
+
+      // Remover o input da tela
+      document.body.removeChild(input);
+
+      // Atualizar as anotações na tela
+      mostrarDadosSalvosNaTela();
     }
   });
 
   // Quando o usuário clicar fora do input, também salvar e removê-lo
   input.addEventListener("blur", function () {
-    // Salvar o valor digitado no Local Storage
-    localStorage.setItem("userInput", input.value);
+    let notes = JSON.parse(localStorage.getItem("notes")) || [];
+    notes.push(input.value);
+    localStorage.setItem("notes", JSON.stringify(notes));
     document.body.removeChild(input);
+    mostrarDadosSalvosNaTela();
   });
 }
 
-
 function mostrarDadosSalvosNaTela() {
-  const savedData = localStorage.getItem("userInput");
+  const notes = JSON.parse(localStorage.getItem("notes")) || [];
 
+  const divHTML = document.getElementById('anotacoes');
+  
+  // Verifica se a div foi encontrada
+  if (divHTML) {
+    // Limpa a div antes de atualizar as anotações
+    divHTML.innerHTML = '';
 
-  if (savedData) {
+    // Cria uma lista <ul> para as anotações
+    const ulHTML = document.createElement('ul');
 
-    var divHTML = document.getElementById('anotacoes')
-    var pHTML = document.createElement('p')
+    // Adiciona um item <li> para cada anotação
+    notes.forEach(note => {
+      const liHTML = document.createElement('li');
+      liHTML.textContent = note;
+      ulHTML.appendChild(liHTML);
+    });
 
-    pHTML.textContent = savedData
-
-    console.log(pHTML)
-
-    divHTML.appendChild(pHTML)
+    // Adiciona a lista à div
+    divHTML.appendChild(ulHTML);
   }
-
 }
 
-
-
-mostrarDadosSalvosNaTela()
+// Chama a função para exibir dados ao carregar a página
+mostrarDadosSalvosNaTela();
