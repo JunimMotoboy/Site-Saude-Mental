@@ -91,7 +91,7 @@ function mostrarDadosSalvosNaTela() {
     const ulHTML = document.createElement('ul');
 
     ulHTML.style.listStyle = "square"
-    
+
     // Adiciona um item <li> para cada anotação
     notes.forEach((note, index) => {
       const liHTML = document.createElement('li');
@@ -107,6 +107,7 @@ function mostrarDadosSalvosNaTela() {
       deleteButton.style.borderRadius = "50%"
       deleteButton.style.height = "30px"
       deleteButton.style.width = "30px"
+      deleteButton.style.cursor = "pointer"
       
       // Função para excluir a anotação
       deleteButton.addEventListener('click', function () {
