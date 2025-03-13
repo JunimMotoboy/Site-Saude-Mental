@@ -34,39 +34,51 @@ function criarInputTelaCheia() {
   // Quando o usuário pressionar 'Enter', salvar o valor e remover o input
   input.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-      // Recuperar anotações antigas ou criar uma nova lista
-      let notes = JSON.parse(localStorage.getItem("notes")) || [];
+      const userInput = input.value.trim(); // Remove espaços em branco
 
-      // Adicionar a nova anotação à lista
-      notes.push(input.value);
-      
-      // Salvar a lista atualizada no localStorage
-      localStorage.setItem("notes", JSON.stringify(notes));
+      // Verifica se o input não está vazio
+      if (userInput !== "") {
+        // Recuperar anotações antigas ou criar uma nova lista
+        let notes = JSON.parse(localStorage.getItem("notes")) || [];
 
-      // Limpar o valor do input
-      input.value = '';
+        // Adicionar a nova anotação à lista
+        notes.push(userInput);
 
-      // Remover o input da tela
-      document.body.removeChild(input);
+        // Salvar a lista atualizada no localStorage
+        localStorage.setItem("notes", JSON.stringify(notes));
 
-      // Atualizar as anotações na tela
-      mostrarDadosSalvosNaTela();
+        // Limpar o valor do input
+        input.value = '';
+
+        // Remover o input da tela
+        document.body.removeChild(input);
+
+        // Atualizar as anotações na tela
+        mostrarDadosSalvosNaTela();
+      } else {
+        // Se o input estiver vazio, mostrar alerta
+        alert("Por favor, insira algum texto antes de salvar.");
+      }
     }
   });
 
   // Quando o usuário clicar fora do input, também salvar e removê-lo
   input.addEventListener("blur", function () {
-    let notes = JSON.parse(localStorage.getItem("notes")) || [];
-    notes.push(input.value);
-    localStorage.setItem("notes", JSON.stringify(notes));
-    document.body.removeChild(input);
-    mostrarDadosSalvosNaTela();
+    const userInput = input.value.trim(); // Remove espaços em branco
+
+    // Verifica se o input não está vazio
+    if (userInput !== "") {
+      let notes = JSON.parse(localStorage.getItem("notes")) || [];
+      notes.push(userInput);
+      localStorage.setItem("notes", JSON.stringify(notes));
+      document.body.removeChild(input);
+      mostrarDadosSalvosNaTela();
+    }
   });
 }
 
 function mostrarDadosSalvosNaTela() {
   const notes = JSON.parse(localStorage.getItem("notes")) || [];
-
   const divHTML = document.getElementById('anotacoes');
   
   // Verifica se a div foi encontrada
@@ -77,16 +89,56 @@ function mostrarDadosSalvosNaTela() {
     // Cria uma lista <ul> para as anotações
     const ulHTML = document.createElement('ul');
 
+    ulHTML.style.listStyle = "square"
+
     // Adiciona um item <li> para cada anotação
-    notes.forEach(note => {
+    notes.forEach((note, index) => {
       const liHTML = document.createElement('li');
       liHTML.textContent = note;
+
+      // Criação do botão de exclusão
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent = '✔';
+      deleteButton.style.marginLeft = '10px';
+      deleteButton.style.background = "url('✔')"
+      deleteButton.style.padding = "5px"
+      deleteButton.style.background = "greenyellow"
+      deleteButton.style.borderRadius = "50%"
+      deleteButton.style.height = "30px"
+      deleteButton.style.width = "30px"
+      
+      // Função para excluir a anotação
+      deleteButton.addEventListener('click', function () {
+
+        if(excluirTarefa){
+          alert("Parabêns por ter concluido a tarefa")
+          excluirTarefa(index);
+        }
+
+      });
+
+      // Adiciona o botão ao item de lista
+      liHTML.appendChild(deleteButton);
       ulHTML.appendChild(liHTML);
     });
 
     // Adiciona a lista à div
     divHTML.appendChild(ulHTML);
   }
+}
+
+// Função para excluir uma tarefa específica
+function excluirTarefa(index) {
+  let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+  // Remove a anotação da lista usando o índice
+  notes.splice(index, 1);
+
+  // Atualiza as anotações no localStorage
+  localStorage.setItem("notes", JSON.stringify(notes));
+
+  // Atualiza as anotações na tela
+  mostrarDadosSalvosNaTela();
 }
 
 // Chama a função para exibir dados ao carregar a página
