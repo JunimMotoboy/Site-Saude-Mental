@@ -168,6 +168,7 @@ h1, .ansiedade{
 
 .card h3 {
   font-size: 1.5em;
+  font-weight: 400;
   margin: 15px 0 5px;
   color: #333;
 }
@@ -180,8 +181,8 @@ h1, .ansiedade{
 
 .card p {
   font-size: 1em;
+  font-weight: 100;
   color: #444;
-  text-align: center;
   line-height: 1.5;
   margin-bottom: 20px;
 }
