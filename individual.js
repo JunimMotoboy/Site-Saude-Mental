@@ -48,13 +48,25 @@ function criarInputTelaCheia() {
   });
 }
 
+
 function mostrarDadosSalvosNaTela() {
   const savedData = localStorage.getItem("userInput");
-  const displayDiv = document.getElementById("displayData");
+
 
   if (savedData) {
-    displayDiv.textContent = "Dados Salvos: " + savedData;
-  } else {
-    displayDiv.textContent = "Nenhum dado encontrado.";
+
+    var divHTML = document.getElementById('anotacoes')
+    var pHTML = document.createElement('p')
+
+    pHTML.textContent = savedData
+
+    console.log(pHTML)
+
+    divHTML.appendChild(pHTML)
   }
+
 }
+
+
+
+mostrarDadosSalvosNaTela()
