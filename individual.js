@@ -113,7 +113,7 @@ function mostrarDadosSalvosNaTela() {
       deleteButton.addEventListener('click', function () {
 
         if(excluirTarefa){
-          alert("Parabêns por ter concluído a tarefa")
+          alert("Parabêns por ter concluído a tarefa: " + note)
           excluirTarefa(index);
         }
 
