@@ -12,11 +12,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-.anotacoes{
+.anotacoes {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background:#fff;
+  background: rgba(255, 255, 255, 0.6);
   padding: 50px;
   margin-bottom: 200px;
   width: 500px;
@@ -24,12 +24,13 @@
 
 }
 
-.back{
+.back {
   position: absolute;
   top: -60px;
-  left: 40px; 
+  left: 40px;
 }
-.back img{
+
+.back img {
   width: 50px;
 }
 
@@ -72,7 +73,7 @@ body {
   position: relative;
 }
 
-.txt-top{
+.txt-top {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -80,12 +81,13 @@ body {
   align-items: center;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
 .container {
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -101,11 +103,14 @@ a{
   padding-left: 20px;
   list-style: square;
 }
-h1, .ansiedade{
-  margin-top:80px
+
+h1,
+.ansiedade {
+  margin-top: 80px
 }
 
 .container div {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,10 +121,11 @@ h1, .ansiedade{
   height: 400px;
   gap: 20px;
   padding: 20px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .exercicio img {
   width: 100%;
   max-width: 400px;
@@ -128,6 +134,7 @@ h1, .ansiedade{
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .exercicio ul li {
   font-size: 1.1em;
   color: #444;
@@ -206,7 +213,8 @@ h1, .ansiedade{
   transition: 2s ease-in-out;
 
 }
-header li:hover{
+
+header li:hover {
   transform: scale(1.1);
   color: #fff;
 }
@@ -243,7 +251,7 @@ header li:hover{
 
   .container {
     margin-top: 50px;
-    
+
   }
 
   .titulo {
@@ -254,7 +262,8 @@ header li:hover{
     padding: 15px;
     font-size: 0.9em;
   }
-  .container div{
+
+  .container div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,16 +271,17 @@ header li:hover{
     max-width: 500px;
     font-size: 14px;
   }
-  .container ul{
+
+  .container ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
   }
-  .container{
+
+  .container {
     display: grid;
     grid-template-columns: 1fr;
   }
 
 }
-
