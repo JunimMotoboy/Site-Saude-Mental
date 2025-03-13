@@ -1,6 +1,7 @@
+
 function criarInputTelaCheia() {
-  // Criação do elemento input
   const input = document.createElement("input");
+  // Criação do elemento input
 
   // Estilo para cobrir toda a tela
   input.type = "text";
@@ -111,7 +112,7 @@ function mostrarDadosSalvosNaTela() {
       deleteButton.addEventListener('click', function () {
 
         if(excluirTarefa){
-          alert("Parabêns por ter concluido a tarefa")
+          alert("Parabêns por ter concluído a tarefa")
           excluirTarefa(index);
         }
 
