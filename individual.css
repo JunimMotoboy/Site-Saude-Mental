@@ -96,6 +96,7 @@ h1, .ansiedade{
   justify-content: center;
   text-wrap: wrap;
   text-justify: newspaper;
+  max-width: 600px;
   height: 400px;
   gap: 20px;
   padding: 50px;
@@ -243,7 +244,6 @@ header li:hover{
   .container ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
   .container{
