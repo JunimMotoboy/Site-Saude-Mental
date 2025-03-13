@@ -4,6 +4,17 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.anotacoes{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background:#fff;
+  padding: 50px;
+  margin-bottom: 200px;
+  width: 500px;
+  border-radius: 10px;
+
+}
 
 .back{
   position: absolute;
