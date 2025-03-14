@@ -229,6 +229,54 @@ header li:hover {
 .head a:hover li {
   color: #007bff;
 }
+body {
+  background-color: rgba(123, 185, 255, 0.582);
+  color: #000000;
+}
+
+header {
+  background-color: transparent
+}
+
+.exercicio {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Tema Escuro */
+body.dark-theme {
+  background-color: #000000cb;
+  color: #e0e0e0;
+}
+
+header.dark-theme {
+background-color: transparent;
+
+}
+header .dark-theme{
+  color: #fff !important; 
+}
+.dark-theme li, .dark-theme .titulo {
+  color: #fff;
+}
+
+
+.exercicio.dark-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Outras customizações para o tema escuro */
+.dark-theme a {
+  color: #000000;
+}
+.dark-theme h1{
+  color: #fff;
+}
+ .dark-theme h2, .dark-theme h3 {
+  color: #000000;
+}
+
 
 
 
