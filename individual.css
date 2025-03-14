@@ -293,6 +293,7 @@ header .dark-theme{
   }
   .anotacoes{
     width: 0 auto;
+    text-align: center;
   }
 
   .img-top img {
