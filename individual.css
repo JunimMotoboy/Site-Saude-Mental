@@ -226,9 +226,7 @@ header li:hover {
   cursor: pointer;
 }
 
-.head a:hover li {
-  color: #007bff;
-}
+
 body {
   background-color: rgba(123, 185, 255, 0.582);
   color: #000000;
