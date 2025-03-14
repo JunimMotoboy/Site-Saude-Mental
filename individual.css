@@ -291,6 +291,9 @@ header .dark-theme{
     gap: 15px;
     padding: 0;
   }
+  .anotacoes{
+    width: 0 auto;
+  }
 
   .img-top img {
     width: 100%;
