@@ -142,6 +142,14 @@ function excluirTarefa(index) {
   // Atualiza as anotações na tela
   mostrarDadosSalvosNaTela();
 }
+function toggleTheme() {
+  document.body.classList.toggle('dark-theme');
+  document.querySelector('header').classList.toggle('dark-theme');
+  const exercicios = document.querySelectorAll('.exercicio');
+  exercicios.forEach(exercicio => {
+    exercicio.classList.toggle('dark-theme');
+  });
+}
 
 // Chama a função para exibir dados ao carregar a página
 mostrarDadosSalvosNaTela();
