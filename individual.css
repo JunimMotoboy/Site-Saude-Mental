@@ -291,9 +291,12 @@ header .dark-theme{
     gap: 15px;
     padding: 0;
   }
-  .anotacoes{
+  .anotacoes {
     width: 0 auto;
     text-align: center;
+  
+  }
+  .anotacoes ul{
     list-style: none;
   }
 
