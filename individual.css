@@ -284,5 +284,9 @@ header li:hover {
     grid-template-columns: 1fr;
   }
 
+  .anotacoes{
+    width: auto;
+  }
+
   
 }
